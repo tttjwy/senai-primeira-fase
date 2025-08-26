@@ -27,7 +27,7 @@ programa {
     //leia(corrida5)
     //diaria = corrida1+corrida2+corrida3+corrida4+corrida5
     //escreva("Diaria do Juca deu R$: "+diaria)
-    //porcentagem = (diaria*25) / 100
+    //porcentagem = diaria * 25/100
     //escreva("\nPorcentagem do uber R$: " + porcentagem)
     //sobra = diaria - porcentagem
     //escreva("\nSobrou R$: " + sobra)
@@ -45,7 +45,7 @@ programa {
     leia(corrida5)
     diaria = corrida1+corrida2+corrida3+corrida4+corrida5
     escreva("Diaria do Juca deu R$: "+diaria)
-    porcentagem = (diaria*25) / 100
+    porcentagem = diaria * 25/100
     escreva("\nPorcentagem do uber R$: " + porcentagem)
     sobra = diaria - porcentagem
     escreva("\nSobrou R$: " + sobra)
