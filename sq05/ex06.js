@@ -1,9 +1,9 @@
 let pontucao = Number(prompt("Digite sua pontuação: "))
 if (pontucao <= 10) {
     alert("Deu ruim")
-} else if (pontucao > 10 && pontucao <= 100) {
+} else if (pontucao <= 100) {
     alert("Tá...")
-} else if (pontucao > 100 && pontucao <= 200) { 
+} else if (pontucao <= 200) { 
     alert("Supimpa!!")
 } else if (pontucao > 200) {
     alert("Brabo.")
