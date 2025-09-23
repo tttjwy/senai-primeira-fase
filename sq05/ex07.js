@@ -1,14 +1,18 @@
 let diaria 
-let valorTotal
-let descontoDaAtendente = 0.1
-let descontoDaAssociacao = 0.15
-let multa = 150
-diaria = Number(prompt("Quantos dias você vai ficar no hotel?"))
-if (diaria <= 5) {
-    valorTotal = diaria * 50
-} else if (diaria >= 6 && diaria <= 10) {
-    valorTotal = diaria * 90
+let dias 
+let totalBruto, totalLiquido
+let desconto10, desconto15, multa = 150
+
+dias = Number(prompt("Quantos dias você ficou hospedado?"))
+if (dias <= 5) {
+    diaria = 100
+} else if (dias >= 6 && dias <= 10) {
+    diaria = 80
 } else {
-    valorTotal = diaria * 100
+    diaria = 60
 }
-alert("O valor total da sua estadia é: R$ " + (valorTotal + multa - (valorTotal * descontoDaAtendente) - (valorTotal * descontoDaAssociacao)))
+totalBruto = dias * diaria
+desconto10 = totalBruto * 10 / 100
+desconto15 = totalBruto * 15 / 100
+totalLiquido = totalBruto - (desconto10 + desconto15) + multa
+alert("Número de dias: " + dias + "\nDiária: R$ " + diaria + "\nTotal bruto: R$ " + totalBruto + "\nDesconto 10%: R$ " + desconto10 + "\nDesconto 15%: R$ " + desconto15 + "\nMulta: R$ " + multa + "\n================="+ "\nTotal líquido: R$ " + totalLiquido)
