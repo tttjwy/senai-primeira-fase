@@ -15,7 +15,7 @@
 // }
 // alert(`A soma das notas é: ${soma}`)
 
-const nomes = ["Dona Bete","Mano Juca","Lucio Fernando", "Capitao Ganso"] 
-for(let i=0; i<nomes.length; i++){
-    alert(nomes[i])
-}
+// const nomes = ["Dona Bete","Mano Juca","Lucio Fernando", "Capitao Ganso"] 
+// for(let i=0; i<nomes.length; i++){
+//     alert(nomes[i])
+// }
