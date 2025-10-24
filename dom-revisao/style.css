@@ -1,0 +1,14 @@
+button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+#btCadastrar{
+    background-color: royalblue;
+    color: thistle;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
