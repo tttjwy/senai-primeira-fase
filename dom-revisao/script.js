@@ -28,8 +28,8 @@
 //    document.getElementById("resultado").innerHTML = "A média ponderada é de " + (nota1*2 + nota2*3 + nota3*5) / (2 + 3 + 5)     
 // }
 
-function MediaPonderada(){
-    let nota1 = parseFloat(document.getElementById("inputNota1").value)
-    let nota2 = parseFloat(document.getElementById("inputNota2").value)
-   document.getElementById("resultado").innerHTML = "A média ponderada é de " + (nota1*3.5 + nota2*7.5) / (3.5 + 7.5)     
-}
+// function MediaPonderada(){
+//     let nota1 = parseFloat(document.getElementById("inputNota1").value)
+//     let nota2 = parseFloat(document.getElementById("inputNota2").value)
+//    document.getElementById("resultado").innerHTML = "A média ponderada é de " + (nota1*3.5 + nota2*7.5) / (3.5 + 7.5)     
+// }
