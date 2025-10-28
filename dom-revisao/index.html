@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,14 +10,28 @@
 
 <body>
     <h1>Revisão de DOM</h1>
-    <label for="inputNota1">Nota 1:</label>
-    <input id="inputNota1" type="text">
+    <div id="container">
+        <label for="inputProdutoX">Produto X:</label>
+        <input id="inputProdutoX" type="text">
 
-    <label for="inputNota2">Nota 2:</label>
-    <input id="inputNota2" type="text">
+        <label for="inputMoedas1">Moedas 1:</label>
+        <input id="inputMoedas1" type="text">
 
-    <button onclick="MediaPonderada()" id="btCalcular">Calcular</button>
-    <div id="resultado"></div>
+        <label for="inputMoedas050">Moedas 0.50:</label>
+        <input id="inputMoedas050" type="text">
+
+        <label for="inputMoedas025">Moedas 0.25:</label>
+        <input id="inputMoedas025" type="text">
+
+        <label for="inputMoedas010">Moedas 0.10:</label>
+        <input id="inputMoedas010" type="text">
+
+        <label for="inputMoedas005">Moedas 0.05:</label>
+        <input id="inputMoedas005" type="text">
+
+        <button onclick="Porco()" id="btCalcular">Calcular</button>
+        <div id="resultado"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 
