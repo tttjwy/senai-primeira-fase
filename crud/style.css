@@ -17,21 +17,31 @@ button:hover{
 }
 
 #painelDinos{
-    background-color: #df9482;
-    margin-top: 20px;
-    min-height: 150px;
+    margin-top: 25px;
+    background-color: aquamarine;
+    min-height: 30px;
 }
 
-.cardGenerico{
+.card{
     border: 1px solid #000000;
-    padding: 10px;
-    margin: 5px 0;
-    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.listaDinos{
+#listaDinos{
+    background-color: rgba(137, 43, 226, 0.328);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     flex-wrap: wrap;
+
+    min-height: 500px;
 }

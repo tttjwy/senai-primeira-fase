@@ -1,4 +1,5 @@
 
+
 // teste crud
 
 // const dinossauro = {
@@ -6,7 +7,8 @@
 //     altura: '6'
 // }
 
-const dinossauros = []
+const dinossauros = JSON.parse(localStorage.getItem("dinossauros")) || []
+
 
 // dinossauros.push(dinossauro)
 
@@ -23,9 +25,16 @@ function cadastrarDino(){
     dinossauros.push(dino)
 
     console.log(dinossauros);
+
+    // let dinossaurosTexto = JSON.stringify(dinossauros)
+    // localStorage.setItem("dinossauros", dinossaurosTexto)
+
+    localStorage.setItem("dinossauros", JSON.stringify(dinossauros))
     
     limparForm()
     alert("Dino cadastrado com sucesso!")
+
+    mostrarTodosDinos()
     
 }
 
@@ -37,16 +46,35 @@ function limparForm(){
     document.getElementById('inputNome').focus()
 }
 
-// document.getElementById('menuDinos').innerHTML = `TESTE`
-
 function mostrarTodosDinos(){
-    // document.getElementById('painelDinos').innerHTML = ''
-    for(let i = 0; i < dinossauros.length; i++){
-        document.getElementById('painelDinos').innerHTML += `
-        <div class="cardGenerico">
-        nome: ${dinossauros[i].nome} - Altura: ${dinossauros[i].altura} <br>
-        </div>
-    `
+    document.getElementById('listaDinos').innerHTML = '' 
+    for(let i=0; i<dinossauros.length ; i++){
+        // console.log(i);
+        document.getElementById('listaDinos').innerHTML += `
+            <div class='card'>
+                <h3>${dinossauros[i].nome} </h3>
+                <p>Altura: ${dinossauros[i].altura}</p>
+            </div>
+        `
+        
     }
 }
 
+function lancarMeteoro(){
+    dinossauros.length = 0
+    mostrarTodosDinos()
+}
+
+function navegarParaDois(){
+    // alert('Tchau')
+
+    let nome = prompt("User:")
+    let senha = prompt("Senha: ")
+
+    if(nome == "admin" && senha == "admin"){
+        window.location.href = 'dois.html'
+    }else{
+        alert("Você está tentando invadir, a polícia tá chegando!!")
+    }
+
+}
